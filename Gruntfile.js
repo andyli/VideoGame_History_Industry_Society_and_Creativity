@@ -39,6 +39,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.app %>/*.html',
+                    '<%= yeoman.app %>/week*/*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -190,7 +191,10 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: [
+                '<%= yeoman.app %>/index.html',
+                '<%= yeoman.app %>/week*/index.html',
+            ]
         },
         usemin: {
             options: {
@@ -226,14 +230,18 @@ module.exports = function (grunt) {
             //
             //     <!-- build:css({.tmp,app}) styles/main.css -->
             //
-            // dist: {
-            //     files: {
-            //         '<%= yeoman.dist %>/styles/main.css': [
-            //             '.tmp/styles/{,*/}*.css',
-            //             '<%= yeoman.app %>/styles/{,*/}*.css'
-            //         ]
-            //     }
-            // }
+            dist: {
+                files: {
+                    '<%= yeoman.dist %>/styles/main.css': [
+                        '<%= yeoman.app %>/bower_components/960-grid-system/code/css/reset.css',
+                        '<%= yeoman.app %>/bower_components/960-grid-system/code/css/text.css',
+                        '<%= yeoman.app %>/bower_components/960-grid-system/code/css/960.css',
+                        '<%= yeoman.app %>/bower_components/reveal.js/css/reveal.min.css',
+                        '.tmp/styles/{,*/}*.css',
+                        '<%= yeoman.app %>/styles/{,*/}*.css'
+                    ]
+                }
+            }
         },
         htmlmin: {
             dist: {
@@ -251,7 +259,10 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>',
-                    src: '*.html',
+                    src: [
+                        '*.html',
+                        'week*/*.html'
+                    ],
                     dest: '<%= yeoman.dist %>'
                 }]
             }
@@ -305,8 +316,8 @@ module.exports = function (grunt) {
                 'htmlmin'
             ]
         },
-        build_gh_pages: {
-            gh_pages: {
+        'build_gh_pages': {
+            'gh_pages': {
 
             }
         }

@@ -1,0 +1,41 @@
+body {
+    background: #fafafa;
+    font-family: "Press Start 2P", cursive;
+    -webkit-font-smoothing: none;
+    color: #000;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: medium;
+    padding: 2em 0;
+}
+
+table {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+thead {
+    background: #eee;
+
+    th {
+        font-weight: bold;
+    }
+}
+
+tbody tr:hover {
+    background: #ffc;
+}
+
+th, td {
+    padding: 0.5em 1em;
+    height: 4em;
+}
