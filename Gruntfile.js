@@ -89,7 +89,11 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
-            server: '.tmp'
+            server: '.tmp',
+            useminBug: [
+                'scripts',
+                'styles'
+            ]
         },
         jshint: {
             options: {
@@ -349,7 +353,8 @@ module.exports = function (grunt) {
         'modernizr',
         'copy:dist',
         'rev',
-        'usemin'
+        'usemin',
+        'clean:useminBug'
     ]);
 
     grunt.registerTask('default', [

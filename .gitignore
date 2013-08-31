@@ -4,6 +4,3 @@ dist
 .sass-cache
 .build
 app/bower_components
-
-scripts
-styles
