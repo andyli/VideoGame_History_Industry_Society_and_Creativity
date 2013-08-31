@@ -3,6 +3,11 @@ body {
     font-family: "Press Start 2P", cursive;
     -webkit-font-smoothing: none;
     color: #000;
+    overflow: scroll;
+}
+
+body.slides {
+    overflow: hidden;
 }
 
 .browsehappy {
@@ -31,8 +36,13 @@ thead {
     }
 }
 
-tbody tr:hover {
-    background: #ffc;
+tbody {
+    tr:hover {
+        background: #ffc;
+    }
+    th {
+        text-align: center;
+    }
 }
 
 th, td {
