@@ -304,6 +304,11 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        build_gh_pages: {
+            gh_pages: {
+
+            }
         }
     });
 
@@ -339,5 +344,10 @@ module.exports = function (grunt) {
     grunt.registerTask('default', [
         'jshint',
         'build'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build',
+        'build_gh_pages'
     ]);
 };
