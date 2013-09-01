@@ -49,3 +49,21 @@ th, td {
     padding: 0.5em 1em;
     height: 4em;
 }
+
+body.slides {
+    h1, h2, h3, h4 {
+        padding-bottom: 0.5em;
+    }
+    
+    .title {
+        padding-bottom: 1em;
+    }
+    
+    .fragment {
+        padding-bottom: 1em;
+    }
+
+    .AugmentedMirror img {
+        height: 300px;
+    }
+}
