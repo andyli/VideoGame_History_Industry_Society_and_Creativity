@@ -240,6 +240,7 @@ module.exports = function (grunt) {
                         '<%= yeoman.app %>/bower_components/960-grid-system/code/css/reset.css',
                         '<%= yeoman.app %>/bower_components/960-grid-system/code/css/text.css',
                         '<%= yeoman.app %>/bower_components/960-grid-system/code/css/960.css',
+                        '<%= yeoman.app %>/bower_components/font-awesome/css/font-awesome.css',
                         '<%= yeoman.app %>/bower_components/reveal.js/css/reveal.min.css',
                         '.tmp/styles/{,*/}*.css',
                         '<%= yeoman.app %>/styles/{,*/}*.css'
@@ -293,6 +294,15 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            'font-awesome': {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>/bower_components/font-awesome/font',
+                    dest: '<%= yeoman.dist %>/font',
+                    src: '*'
+                }]
             }
         },
         modernizr: {
@@ -352,6 +362,7 @@ module.exports = function (grunt) {
         'uglify',
         'modernizr',
         'copy:dist',
+        'copy:font-awesome',
         'rev',
         'usemin',
         'clean:useminBug'
