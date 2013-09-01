@@ -5,7 +5,8 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
     "reveal.js": "~2.5.0",
-    "960-grid-system": "*"
+    "960-grid-system": "*",
+    "font-awesome": "~3.2.1"
   },
   "devDependencies": {}
 }
