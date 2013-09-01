@@ -66,4 +66,26 @@ body.slides {
     .AugmentedMirror img {
         height: 300px;
     }
+
+    section.whatisgame .examples {
+        img {
+            height: 250px;
+            padding: 0.5em;
+        }
+    }
+
+    section.whomakegame .examples {
+        img {
+            max-height: 150px;
+            max-width: 300px;
+            padding: 0.5em;
+        }
+    }
+
+    section.videogame {
+        img {
+            height: 250px;
+            padding: 0.5em;
+        }
+    }
 }
