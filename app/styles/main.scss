@@ -15,6 +15,7 @@ body.slides {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+    text-align: center;
 }
 
 h1 {
@@ -53,8 +54,9 @@ h4 {
     padding-left: 4px;
 }
 
-p {
+p, li, td, th {
     font-size: 12px;
+    line-height: 18px;
 }
 
 a {
@@ -98,6 +100,25 @@ tbody {
 i[class^="icon"] {
     text-decoration: none;
     padding: 0.5em;
+}
+
+#about p {
+    margin: 2em 1em;
+    font-size: medium;
+    text-align: center;
+}
+
+#contact {
+    li {
+        list-style: none;
+    }
+}
+
+#license {
+    margin-top: 4em;
+    p {
+        font-size: 9px;
+    }
 }
 
 body.slides {
