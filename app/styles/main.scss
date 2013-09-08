@@ -122,9 +122,15 @@ i[class^="icon"] {
 }
 
 body.slides {
-    h1, h2, h3, h4 {
+    h1, h2, h3 {
         padding: 0.25em 0;
         margin-bottom: 0.25em; 
+    }
+
+    h4 {
+        padding: 0.25em 0;
+        margin-bottom: 0.5em;
+        color: #F33;
     }
     
     .title {
@@ -158,6 +164,17 @@ body.slides {
         img {
             height: 250px;
             padding: 0.5em;
+        }
+    }
+
+    .items4 {
+        .item {
+            width: 400px;
+            height: 280px;
+        }
+
+        img.item {
+            height: auto;
         }
     }
 }
