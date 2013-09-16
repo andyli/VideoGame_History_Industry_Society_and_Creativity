@@ -71,33 +71,35 @@ a:hover {
     color: #F66;
 }
 
-table {
-    width: 100%;
-    font-size: 12px;
-}
-
-thead {
-    background: #eee;
-
-    th {
-        font-weight: bold;
-        height: 2em;
-        line-height: 2em;
-        text-align: center;
-    }
-}
-
-tbody {
-    tr:hover {
-        background: #ffc;
-    }
-    th {
-        text-align: center;
+.schedule {
+    table {
+        width: 100%;
+        font-size: 12px;
     }
 
-    th, td {
-        padding: 0.5em 1em;
-        height: 4em;
+    thead {
+        background: #eee;
+
+        th {
+            font-weight: bold;
+            height: 2em;
+            line-height: 2em;
+            text-align: center;
+        }
+    }
+
+    tbody {
+        tr:hover {
+            background: #ffc;
+        }
+        th {
+            text-align: center;
+        }
+
+        th, td {
+            padding: 0.5em 1em;
+            height: 4em;
+        }
     }
 }
 
@@ -179,6 +181,15 @@ body.slides {
 
         img.item {
             height: auto;
+        }
+    }
+
+    .ActantialModelFFX table {
+        width: 600px;
+        margin: 1em auto;
+        td {
+            height: 100px;
+            text-align: center;
         }
     }
 }
