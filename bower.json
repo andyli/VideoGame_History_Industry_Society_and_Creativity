@@ -1,6 +1,6 @@
 {
   "name": "videogame-history-industry-society-and-creativity",
-  "version": "0.0.0",
+  "private": true,
   "dependencies": {
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
