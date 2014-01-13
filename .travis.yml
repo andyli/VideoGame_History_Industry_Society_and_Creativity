@@ -23,7 +23,8 @@ env:
 
 before_script:
     - gem update --system
-    - gem install compass
+    - gem install sass -v 3.2.13
+    - gem install compass -v 0.12.2
     - npm install -g grunt-cli bower
 script:
     # We want to gate on passing tests and a successful build
