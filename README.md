@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andyli/VideoGame_History_Industry_Society_and_Creativity.png?branch=master)](https://travis-ci.org/andyli/VideoGame_History_Industry_Society_and_Creativity)
+
 This is the course website of **GE4102 Video Game: History, Industry, Society, and Creativity**, 
 offered by the [School of Creative Media](http://www.scm.cityu.edu.hk/), 
 [City University of Hong Kong](http://www.cityu.edu.hk/). This is only used by the classes that are taught by Andy Li.
