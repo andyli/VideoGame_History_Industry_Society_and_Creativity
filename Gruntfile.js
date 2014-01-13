@@ -183,7 +183,10 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: [
+                '<%= yeoman.app %>/index.html',
+                '<%= yeoman.app %>/lecture*/index.html'
+            ]
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -277,7 +280,7 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/sass-bootstrap/fonts/*.*'
+                        'googleb165fe55002fa457.html'
                     ]
                 }]
             },
@@ -287,6 +290,15 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            'font-awesome': {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>/bower_components/font-awesome/font',
+                    dest: '<%= yeoman.dist %>/font',
+                    src: '*'
+                }]
             }
         },
 
@@ -348,6 +360,7 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
+        'copy:font-awesome',
         'modernizr',
         'rev',
         'usemin',
